@@ -1,0 +1,26 @@
+@import "../../../index.scss";
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 0px 16px;
+
+  //   position: absolute;
+  width: 305px;
+  min-height: 146px;
+  //   left: 61px;
+  //   top: 121px;
+
+  /* 07 - Common/01 White */
+
+  background: #ffffff;
+  /* Divider */
+
+  border: 1px solid rgba(145, 158, 171, 0.24);
+  box-sizing: border-box;
+  border-radius: 4px;
+  @media screen and (max-width: 670px) {
+    margin-top: 18px;
+  }
+}

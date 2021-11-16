@@ -1,0 +1,27 @@
+@import "../../../index.scss";
+.Topbar {
+  //   height: 40px;
+  //   border: 1px solid $primary-color;
+  //   border-radius: 8px;
+  //   display: flex;
+  //   align-items: center;
+  //   padding: 10px;
+  font-size: 24px;
+
+  display: flex;
+  //   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 24px;
+
+  //   position: absolute;
+  //   width: 1440px;
+  height: 52px;
+
+  /* Common/01 White */
+
+  background: #ffffff;
+  /* Filter/03 Bottom */
+
+  box-shadow: inset 0px -1px 0px rgba(145, 158, 171, 0.24);
+}

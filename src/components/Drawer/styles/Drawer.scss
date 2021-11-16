@@ -1,0 +1,54 @@
+@import "../../../index.scss";
+
+.Drawer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  display: none;
+  background-color: #f9fafb;
+  z-index: 10;
+  transition: width 0.5s;
+}
+.visible {
+  display: block;
+  @media screen and (max-width: 930px) {
+    width: 60%;
+  }
+  @media screen and (max-width: 670px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
+  width: 30%;
+}
+.Backdrop {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #ccc;
+  z-index: 9;
+  transition: background-color 0.5s;
+  opacity: 0.5;
+  box-shadow: inset 0px 0px 0px -1px rgba(145, 158, 171, 0.24);
+}
+.backdrop-visible {
+  display: block;
+}
+.close-area {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  box-shadow: inset 0px -1px 0px rgba(145, 158, 171, 0.24);
+}
+.close-button {
+  cursor: pointer;
+}
+
+.content-area {
+  padding: 10px;
+}
